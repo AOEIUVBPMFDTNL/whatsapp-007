@@ -1,0 +1,2242 @@
+{
+    "8": {
+        "areaCodeLengthMap": {
+            "682": {
+                "areaCodeList": [
+                    "682"
+                ],
+                "englishName": "Cook Islands",
+                "chineseName": "库克群岛",
+                "lengthList": [
+                    "8"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "3"
+        ]
+    },
+    "9": {
+        "areaCodeLengthMap": {
+            "298": {
+                "areaCodeList": [
+                    "298"
+                ],
+                "englishName": "Faroe Islands",
+                "chineseName": "法罗群岛",
+                "lengthList": [
+                    "9"
+                ]
+            },
+            "299": {
+                "areaCodeList": [
+                    "299"
+                ],
+                "englishName": "Greenland",
+                "chineseName": "格陵兰岛",
+                "lengthList": [
+                    "9"
+                ]
+            },
+            "508": {
+                "areaCodeList": [
+                    "508"
+                ],
+                "englishName": "Saint Pierre and Miquelon",
+                "chineseName": "圣彼埃尔和密克隆岛",
+                "lengthList": [
+                    "9"
+                ]
+            },
+            "687": {
+                "areaCodeList": [
+                    "687"
+                ],
+                "englishName": "New Caledonia",
+                "chineseName": "新喀里多尼亚",
+                "lengthList": [
+                    "9"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "3"
+        ]
+    },
+    "10": {
+        "areaCodeLengthMap": {
+            "45": {
+                "areaCodeList": [
+                    "45"
+                ],
+                "englishName": "Denmark",
+                "chineseName": "丹麦",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "47": {
+                "areaCodeList": [
+                    "47"
+                ],
+                "englishName": "Norway",
+                "chineseName": "挪威",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "64": {
+                "areaCodeList": [
+                    "64"
+                ],
+                "englishName": "New Zealand",
+                "chineseName": "新西兰",
+                "lengthList": [
+                    "10",
+                    "11",
+                    "12"
+                ]
+            },
+            "65": {
+                "areaCodeList": [
+                    "65"
+                ],
+                "englishName": "Singapore",
+                "chineseName": "新加坡",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "220": {
+                "areaCodeList": [
+                    "220"
+                ],
+                "englishName": "Gambia",
+                "chineseName": "冈比亚",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "221": {
+                "areaCodeList": [
+                    "221"
+                ],
+                "englishName": "Senegal",
+                "chineseName": "塞内加尔",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "238": {
+                "areaCodeList": [
+                    "238"
+                ],
+                "englishName": "Cape Verde",
+                "chineseName": "开普",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "239": {
+                "areaCodeList": [
+                    "239"
+                ],
+                "englishName": "Sao Tome and Principe",
+                "chineseName": "圣多美和普林西比",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "248": {
+                "areaCodeList": [
+                    "248"
+                ],
+                "englishName": "Seychelles",
+                "chineseName": "塞舌尔",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "269": {
+                "areaCodeList": [
+                    "269"
+                ],
+                "englishName": "Comoros",
+                "chineseName": "科摩罗",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "291": {
+                "areaCodeList": [
+                    "291"
+                ],
+                "englishName": "Eritrea",
+                "chineseName": "厄立特里亚",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "297": {
+                "areaCodeList": [
+                    "297"
+                ],
+                "englishName": "Aruba",
+                "chineseName": "阿鲁巴",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "354": {
+                "areaCodeList": [
+                    "354"
+                ],
+                "englishName": "Iceland",
+                "chineseName": "冰岛",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "372": {
+                "areaCodeList": [
+                    "372"
+                ],
+                "englishName": "Estonia",
+                "chineseName": "爱沙尼亚",
+                "lengthList": [
+                    "10",
+                    "11"
+                ]
+            },
+            "423": {
+                "areaCodeList": [
+                    "423"
+                ],
+                "englishName": "Liechtenstein",
+                "chineseName": "列支敦士登",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "501": {
+                "areaCodeList": [
+                    "501"
+                ],
+                "englishName": "Belize",
+                "chineseName": "伯利兹",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "592": {
+                "areaCodeList": [
+                    "592"
+                ],
+                "englishName": "Guyana",
+                "chineseName": "圭亚那",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "593": {
+                "areaCodeList": [
+                    "593"
+                ],
+                "englishName": "Ecuador",
+                "chineseName": "厄瓜多尔",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "597": {
+                "areaCodeList": [
+                    "597"
+                ],
+                "englishName": "Suriname",
+                "chineseName": "苏里南",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "599": {
+                "areaCodeList": [
+                    "599"
+                ],
+                "englishName": "Curacao",
+                "chineseName": "库拉索",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "673": {
+                "areaCodeList": [
+                    "673"
+                ],
+                "englishName": "Brunei",
+                "chineseName": "文莱",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "676": {
+                "areaCodeList": [
+                    "676"
+                ],
+                "englishName": "Tonga",
+                "chineseName": "汤加",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "677": {
+                "areaCodeList": [
+                    "677"
+                ],
+                "englishName": "Solomon Islands",
+                "chineseName": "所罗门群岛",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "678": {
+                "areaCodeList": [
+                    "678"
+                ],
+                "englishName": "Vanuatu",
+                "chineseName": "瓦努阿图",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "679": {
+                "areaCodeList": [
+                    "679"
+                ],
+                "englishName": "Fiji",
+                "chineseName": "斐济",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "680": {
+                "areaCodeList": [
+                    "680"
+                ],
+                "englishName": "Palau",
+                "chineseName": "帕劳",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "685": {
+                "areaCodeList": [
+                    "685"
+                ],
+                "englishName": "Samoa",
+                "chineseName": "萨摩亚",
+                "lengthList": [
+                    "10"
+                ]
+            },
+            "686": {
+                "areaCodeList": [
+                    "686"
+                ],
+                "englishName": "Kiribati",
+                "chineseName": "基里巴斯",
+                "lengthList": [
+                    "10"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "3",
+            "2"
+        ]
+    },
+    "11": {
+        "areaCodeLengthMap": {
+            "1": {
+                "areaCodeList": [
+                    "1"
+                ],
+                "englishName": "United States",
+                "chineseName": "美国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "77": {
+                            "areaCodeList": [
+                                "77"
+                            ],
+                            "englishName": "Kazakhstan",
+                            "chineseName": "哈萨克斯坦",
+                            "lengthList": [
+                                "11"
+                            ]
+                        },
+            "79": {
+                "areaCodeList": [
+                    "79"
+                ],
+                "englishName": "Russia",
+                "chineseName": "俄罗斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "7": {
+                "areaCodeList": [
+                    "7"
+                ],
+                "englishName": "Russia",
+                "chineseName": "俄罗斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "20": {
+                "areaCodeList": [
+                    "20"
+                ],
+                "englishName": "Egypt",
+                "chineseName": "埃及",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "27": {
+                "areaCodeList": [
+                    "27"
+                ],
+                "englishName": "South Africa",
+                "chineseName": "南非",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "31": {
+                "areaCodeList": [
+                    "31"
+                ],
+                "englishName": "Netherlands",
+                "chineseName": "荷兰",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "32": {
+                "areaCodeList": [
+                    "32"
+                ],
+                "englishName": "Belgium",
+                "chineseName": "比利时",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "33": {
+                "areaCodeList": [
+                    "33"
+                ],
+                "englishName": "France",
+                "chineseName": "法国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "34": {
+                "areaCodeList": [
+                    "34"
+                ],
+                "englishName": "Spain",
+                "chineseName": "西班牙",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "36": {
+                "areaCodeList": [
+                    "36"
+                ],
+                "englishName": "Hungary",
+                "chineseName": "匈牙利",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "40": {
+                "areaCodeList": [
+                    "40"
+                ],
+                "englishName": "Romania",
+                "chineseName": "罗马尼亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "41": {
+                "areaCodeList": [
+                    "41"
+                ],
+                "englishName": "Switzerland",
+                "chineseName": "瑞士",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "46": {
+                "areaCodeList": [
+                    "46"
+                ],
+                "englishName": "Sweden",
+                "chineseName": "瑞典",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "48": {
+                "areaCodeList": [
+                    "48"
+                ],
+                "englishName": "Poland",
+                "chineseName": "波兰",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "51": {
+                "areaCodeList": [
+                    "51"
+                ],
+                "englishName": "Peru",
+                "chineseName": "秘鲁",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "55": {
+                "areaCodeList": [
+                    "55"
+                ],
+                "englishName": "Brazil",
+                "chineseName": "巴西",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "56": {
+                "areaCodeList": [
+                    "56"
+                ],
+                "englishName": "Chile",
+                "chineseName": "智利",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "60": {
+                "areaCodeList": [
+                    "60"
+                ],
+                "englishName": "Malaysia",
+                "chineseName": "马来西亚",
+                "lengthList": [
+                    "12",
+                    "11"
+                ]
+            },
+            "61": {
+                "areaCodeList": [
+                    "61"
+                ],
+                "englishName": "Australia",
+                "chineseName": "澳大利亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "64": {
+                "areaCodeList": [
+                    "64"
+                ],
+                "englishName": "New Zealand",
+                "chineseName": "新西兰",
+                "lengthList": [
+                    "10",
+                    "11",
+                    "12"
+                ]
+            },
+            "66": {
+                "areaCodeList": [
+                    "66"
+                ],
+                "englishName": "Thailand",
+                "chineseName": "泰国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "84": {
+                "areaCodeList": [
+                    "84"
+                ],
+                "englishName": "Vietnam",
+                "chineseName": "越南",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "93": {
+                "areaCodeList": [
+                    "93"
+                ],
+                "englishName": "Afghanistan",
+                "chineseName": "阿富汗",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "216": {
+                "areaCodeList": [
+                    "216"
+                ],
+                "englishName": "Tunisia",
+                "chineseName": "突尼斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "218": {
+                "areaCodeList": [
+                    "218"
+                ],
+                "englishName": "Libya",
+                "chineseName": "利比亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "222": {
+                "areaCodeList": [
+                    "222"
+                ],
+                "englishName": "Mauritania",
+                "chineseName": "毛里塔尼亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "223": {
+                "areaCodeList": [
+                    "223"
+                ],
+                "englishName": "Mali",
+                "chineseName": "马里",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "225": {
+                "areaCodeList": [
+                    "225"
+                ],
+                "englishName": "Ivory Coast",
+                "chineseName": "象牙海岸",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "226": {
+                "areaCodeList": [
+                    "226"
+                ],
+                "englishName": "Burkina Faso",
+                "chineseName": "布基纳法索",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "227": {
+                "areaCodeList": [
+                    "227"
+                ],
+                "englishName": "Niger",
+                "chineseName": "尼日尔",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "228": {
+                "areaCodeList": [
+                    "228"
+                ],
+                "englishName": "Togo",
+                "chineseName": "多哥",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "229": {
+                "areaCodeList": [
+                    "229"
+                ],
+                "englishName": "Benin",
+                "chineseName": "贝宁",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "230": {
+                "areaCodeList": [
+                    "230"
+                ],
+                "englishName": "Mauritius",
+                "chineseName": "毛里求斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "232": {
+                "areaCodeList": [
+                    "232"
+                ],
+                "englishName": "Sierra Leone",
+                "chineseName": "塞拉利昂",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "235": {
+                "areaCodeList": [
+                    "235"
+                ],
+                "englishName": "Chad",
+                "chineseName": "乍得",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "236": {
+                "areaCodeList": [
+                    "236"
+                ],
+                "englishName": "Central African Republic",
+                "chineseName": "中非共和国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "241": {
+                "areaCodeList": [
+                    "241"
+                ],
+                "englishName": "Gabon",
+                "chineseName": "加蓬",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "253": {
+                "areaCodeList": [
+                    "253"
+                ],
+                "englishName": "Djibouti",
+                "chineseName": "吉布提",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "257": {
+                "areaCodeList": [
+                    "257"
+                ],
+                "englishName": "Burundi",
+                "chineseName": "布隆迪",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "266": {
+                "areaCodeList": [
+                    "266"
+                ],
+                "englishName": "Lesotho",
+                "chineseName": "莱索托",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "267": {
+                "areaCodeList": [
+                    "267"
+                ],
+                "englishName": "Botswana",
+                "chineseName": "博茨瓦纳",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "268": {
+                "areaCodeList": [
+                    "268"
+                ],
+                "englishName": "Eswatini",
+                "chineseName": "斯威士兰",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "350": {
+                "areaCodeList": [
+                    "350"
+                ],
+                "englishName": "Gibraltar",
+                "chineseName": "直布罗陀",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "356": {
+                "areaCodeList": [
+                    "356"
+                ],
+                "englishName": "Malta",
+                "chineseName": "马耳他",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "357": {
+                "areaCodeList": [
+                    "357"
+                ],
+                "englishName": "Cyprus",
+                "chineseName": "塞浦路斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "370": {
+                "areaCodeList": [
+                    "370"
+                ],
+                "englishName": "Lithuania",
+                "chineseName": "立陶宛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "371": {
+                "areaCodeList": [
+                    "371"
+                ],
+                "englishName": "Latvia",
+                "chineseName": "拉脱维亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "372": {
+                "areaCodeList": [
+                    "372"
+                ],
+                "englishName": "Estonia",
+                "chineseName": "爱沙尼亚",
+                "lengthList": [
+                    "10",
+                    "11"
+                ]
+            },
+            "373": {
+                "areaCodeList": [
+                    "373"
+                ],
+                "englishName": "Moldova",
+                "chineseName": "摩尔多瓦",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "374": {
+                "areaCodeList": [
+                    "374"
+                ],
+                "englishName": "Armenia",
+                "chineseName": "亚美尼亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "377": {
+                "areaCodeList": [
+                    "377"
+                ],
+                "englishName": "Monaco",
+                "chineseName": "摩纳哥",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "378": {
+                "areaCodeList": [
+                    "378"
+                ],
+                "englishName": "San Marino",
+                "chineseName": "圣马力诺",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "382": {
+                "areaCodeList": [
+                    "382"
+                ],
+                "englishName": "Montenegro",
+                "chineseName": "黑山",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "386": {
+                "areaCodeList": [
+                    "386"
+                ],
+                "englishName": "Slovenia",
+                "chineseName": "斯洛文尼亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "387": {
+                "areaCodeList": [
+                    "387"
+                ],
+                "englishName": "Bosnia and Herzegovina",
+                "chineseName": "波斯尼亚和黑塞哥维那",
+                "lengthList": [
+                    "11",
+                    "12"
+                ]
+            },
+            "389": {
+                "areaCodeList": [
+                    "389"
+                ],
+                "englishName": "North Macedonia",
+                "chineseName": "北马其顿",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "502": {
+                "areaCodeList": [
+                    "502"
+                ],
+                "englishName": "Guatemala",
+                "chineseName": "瓜地马拉",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "503": {
+                "areaCodeList": [
+                    "503"
+                ],
+                "englishName": "El Salvador",
+                "chineseName": "萨尔瓦多",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "504": {
+                "areaCodeList": [
+                    "504"
+                ],
+                "englishName": "Honduras",
+                "chineseName": "洪都拉斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "505": {
+                "areaCodeList": [
+                    "505"
+                ],
+                "englishName": "Nicaragua",
+                "chineseName": "尼加拉瓜",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "506": {
+                "areaCodeList": [
+                    "506"
+                ],
+                "englishName": "Costa Rica",
+                "chineseName": "哥斯达黎加",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "507": {
+                "areaCodeList": [
+                    "507"
+                ],
+                "englishName": "Panama",
+                "chineseName": "巴拿马",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "509": {
+                "areaCodeList": [
+                    "509"
+                ],
+                "englishName": "Haiti",
+                "chineseName": "海地",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "591": {
+                "areaCodeList": [
+                    "591"
+                ],
+                "englishName": "Bolivia",
+                "chineseName": "玻利维亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "598": {
+                "areaCodeList": [
+                    "598"
+                ],
+                "englishName": "Uruguay",
+                "chineseName": "乌拉圭",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "670": {
+                "areaCodeList": [
+                    "670"
+                ],
+                "englishName": "Timor-Leste",
+                "chineseName": "东帝汶",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "675": {
+                "areaCodeList": [
+                    "675"
+                ],
+                "englishName": "Papua New Guinea",
+                "chineseName": "巴布亚新几内亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "689": {
+                "areaCodeList": [
+                    "689"
+                ],
+                "englishName": "French Polynesia",
+                "chineseName": "法属波利尼西亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "852": {
+                "areaCodeList": [
+                    "852"
+                ],
+                "englishName": "Hong Kong",
+                "chineseName": "中国香港",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "853": {
+                "areaCodeList": [
+                    "853"
+                ],
+                "englishName": "Macao",
+                "chineseName": "中国澳门",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "855": {
+                "areaCodeList": [
+                    "855"
+                ],
+                "englishName": "Cambodia",
+                "chineseName": "柬埔寨",
+                "lengthList": [
+                    "11",
+                    "12"
+                ]
+            },
+            "880": {
+                "areaCodeList": [
+                    "880"
+                ],
+                "englishName": "Bangladesh",
+                "chineseName": "孟加拉国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "961": {
+                "areaCodeList": [
+                    "961"
+                ],
+                "englishName": "Lebanon",
+                "chineseName": "黎巴嫩",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "965": {
+                "areaCodeList": [
+                    "965"
+                ],
+                "englishName": "Kuwait",
+                "chineseName": "科威特",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "968": {
+                "areaCodeList": [
+                    "968"
+                ],
+                "englishName": "Oman",
+                "chineseName": "阿曼",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "973": {
+                "areaCodeList": [
+                    "973"
+                ],
+                "englishName": "Bahrain",
+                "chineseName": "巴林",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "975": {
+                "areaCodeList": [
+                    "975"
+                ],
+                "englishName": "Bhutan",
+                "chineseName": "不丹",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "976": {
+                "areaCodeList": [
+                    "976"
+                ],
+                "englishName": "Mongolia",
+                "chineseName": "蒙古",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "993": {
+                "areaCodeList": [
+                    "993"
+                ],
+                "englishName": "Turkmenistan",
+                "chineseName": "土库曼斯坦",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1242": {
+                "areaCodeList": [
+                    "1242"
+                ],
+                "englishName": "Bahamas",
+                "chineseName": "巴哈马",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1246": {
+                "areaCodeList": [
+                    "1246"
+                ],
+                "englishName": "Barbados",
+                "chineseName": "巴巴多斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1264": {
+                "areaCodeList": [
+                    "1264"
+                ],
+                "englishName": "Anguilla",
+                "chineseName": "安圭拉",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1268": {
+                "areaCodeList": [
+                    "1268"
+                ],
+                "englishName": "Antigua and Barbuda",
+                "chineseName": "安提瓜和巴布达",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1284": {
+                "areaCodeList": [
+                    "1284"
+                ],
+                "englishName": "Virgin Islands, British",
+                "chineseName": "英属处女群岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1340": {
+                "areaCodeList": [
+                    "1340"
+                ],
+                "englishName": "Virgin Islands, US",
+                "chineseName": "美属维尔京群岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1345": {
+                "areaCodeList": [
+                    "1345"
+                ],
+                "englishName": "Cayman Islands",
+                "chineseName": "开曼群岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1441": {
+                "areaCodeList": [
+                    "1441"
+                ],
+                "englishName": "Bermuda",
+                "chineseName": "百慕大群岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1473": {
+                "areaCodeList": [
+                    "1473"
+                ],
+                "englishName": "Grenada",
+                "chineseName": "格林纳达",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1649": {
+                "areaCodeList": [
+                    "1649"
+                ],
+                "englishName": "Turks and Caicos Islands",
+                "chineseName": "特克斯和凯科斯群岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1664": {
+                "areaCodeList": [
+                    "1664"
+                ],
+                "englishName": "Montserrat",
+                "chineseName": "蒙特塞拉特岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1671": {
+                "areaCodeList": [
+                    "1671"
+                ],
+                "englishName": "Guam",
+                "chineseName": "关岛",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1684": {
+                "areaCodeList": [
+                    "1684"
+                ],
+                "englishName": "American Samoa",
+                "chineseName": "美属萨摩亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1721": {
+                "areaCodeList": [
+                    "1721"
+                ],
+                "englishName": "Sint Maarten (Dutch Part)",
+                "chineseName": "圣马丁岛（荷兰部分）",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1758": {
+                "areaCodeList": [
+                    "1758"
+                ],
+                "englishName": "Saint Lucia",
+                "chineseName": "圣露西亚",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1767": {
+                "areaCodeList": [
+                    "1767"
+                ],
+                "englishName": "Dominica",
+                "chineseName": "多米尼加",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1784": {
+                "areaCodeList": [
+                    "1784"
+                ],
+                "englishName": "Saint Vincent and The Grenadines",
+                "chineseName": "圣文森特和格林纳丁斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1787": {
+                "areaCodeList": [
+                    "1787"
+                ],
+                "englishName": "Puerto Rico",
+                "chineseName": "波多黎各",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1809": {
+                "areaCodeList": [
+                    "1809",
+                    "1829",
+                    "1849"
+                ],
+                "englishName": "Dominican Republic",
+                "chineseName": "多米尼加共和国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1829": {
+                "areaCodeList": [
+                    "1809",
+                    "1829",
+                    "1849"
+                ],
+                "englishName": "Dominican Republic",
+                "chineseName": "多米尼加共和国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1849": {
+                "areaCodeList": [
+                    "1809",
+                    "1829",
+                    "1849"
+                ],
+                "englishName": "Dominican Republic",
+                "chineseName": "多米尼加共和国",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1868": {
+                "areaCodeList": [
+                    "1868"
+                ],
+                "englishName": "Trinidad and Tobago",
+                "chineseName": "特立尼达和多巴哥",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1869": {
+                "areaCodeList": [
+                    "1869"
+                ],
+                "englishName": "Saint Kitts and Nevis",
+                "chineseName": "圣基茨和尼维斯",
+                "lengthList": [
+                    "11"
+                ]
+            },
+            "1876": {
+                "areaCodeList": [
+                    "1876"
+                ],
+                "englishName": "Jamaica",
+                "chineseName": "牙买加",
+                "lengthList": [
+                    "11"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ]
+    },
+    "12": {
+        "areaCodeLengthMap": {
+            "30": {
+                "areaCodeList": [
+                    "30"
+                ],
+                "englishName": "Greece",
+                "chineseName": "希腊",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "39": {
+                "areaCodeList": [
+                    "39"
+                ],
+                "englishName": "Italy",
+                "chineseName": "意大利",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "43": {
+                "areaCodeList": [
+                    "43"
+                ],
+                "englishName": "Austria",
+                "chineseName": "奥地利",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "44": {
+                "areaCodeList": [
+                    "44"
+                ],
+                "englishName": "United Kingdom",
+                "chineseName": "英国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "52": {
+                "areaCodeList": [
+                    "52"
+                ],
+                "englishName": "Mexico",
+                "chineseName": "墨西哥",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "54": {
+                "areaCodeList": [
+                    "54"
+                ],
+                "englishName": "Argentina",
+                "chineseName": "阿根廷",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "58": {
+                "areaCodeList": [
+                    "58"
+                ],
+                "englishName": "Venezuela",
+                "chineseName": "委内瑞拉",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "60": {
+                "areaCodeList": [
+                    "60"
+                ],
+                "englishName": "Malaysia",
+                "chineseName": "马来西亚",
+                "lengthList": [
+                    "12",
+                    "11"
+                ]
+            },
+            "62": {
+                "areaCodeList": [
+                    "62"
+                ],
+                "englishName": "Indonesia",
+                "chineseName": "印度尼西亚",
+                "lengthList": [
+                    "12",
+                    "13"
+                ]
+            },
+            "63": {
+                "areaCodeList": [
+                    "63"
+                ],
+                "englishName": "Philippines",
+                "chineseName": "菲律宾",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "64": {
+                "areaCodeList": [
+                    "64"
+                ],
+                "englishName": "New Zealand",
+                "chineseName": "新西兰",
+                "lengthList": [
+                    "10",
+                    "11",
+                    "12"
+                ]
+            },
+            "81": {
+                "areaCodeList": [
+                    "81"
+                ],
+                "englishName": "Japan",
+                "chineseName": "日本",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "82": {
+                "areaCodeList": [
+                    "82"
+                ],
+                "englishName": "South Korea",
+                "chineseName": "韩国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "90": {
+                "areaCodeList": [
+                    "90"
+                ],
+                "englishName": "Turkey",
+                "chineseName": "土耳其",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "91": {
+                "areaCodeList": [
+                    "91"
+                ],
+                "englishName": "India",
+                "chineseName": "印度",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "92": {
+                "areaCodeList": [
+                    "92"
+                ],
+                "englishName": "Pakistan",
+                "chineseName": "巴基斯坦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "94": {
+                "areaCodeList": [
+                    "94"
+                ],
+                "englishName": "Sri Lanka",
+                "chineseName": "斯里兰卡",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "95": {
+                "areaCodeList": [
+                    "95"
+                ],
+                "englishName": "Myanmar",
+                "chineseName": "缅甸",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "212": {
+                "areaCodeList": [
+                    "212"
+                ],
+                "englishName": "Morocco",
+                "chineseName": "摩洛哥",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "213": {
+                "areaCodeList": [
+                    "213"
+                ],
+                "englishName": "Algeria",
+                "chineseName": "阿尔及利亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "224": {
+                "areaCodeList": [
+                    "224"
+                ],
+                "englishName": "Guinea",
+                "chineseName": "几内亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "231": {
+                "areaCodeList": [
+                    "231"
+                ],
+                "englishName": "Liberia",
+                "chineseName": "利比里亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "233": {
+                "areaCodeList": [
+                    "233"
+                ],
+                "englishName": "Ghana",
+                "chineseName": "加纳",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "237": {
+                "areaCodeList": [
+                    "237"
+                ],
+                "englishName": "Cameroon",
+                "chineseName": "喀麦隆",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "240": {
+                "areaCodeList": [
+                    "240"
+                ],
+                "englishName": "Equatorial Guinea",
+                "chineseName": "赤道几内亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "242": {
+                "areaCodeList": [
+                    "242"
+                ],
+                "englishName": "Republic Of The Congo",
+                "chineseName": "刚果共和国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "243": {
+                "areaCodeList": [
+                    "243"
+                ],
+                "englishName": "Democratic Republic of the Congo",
+                "chineseName": "刚果民主共和国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "244": {
+                "areaCodeList": [
+                    "244"
+                ],
+                "englishName": "Angola",
+                "chineseName": "安哥拉",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "245": {
+                "areaCodeList": [
+                    "245"
+                ],
+                "englishName": "Guinea-Bissau",
+                "chineseName": "几内亚比绍共和国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "250": {
+                "areaCodeList": [
+                    "250"
+                ],
+                "englishName": "Rwanda",
+                "chineseName": "卢旺达",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "251": {
+                "areaCodeList": [
+                    "251"
+                ],
+                "englishName": "Ethiopia",
+                "chineseName": "埃塞俄比亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "252": {
+                "areaCodeList": [
+                    "252"
+                ],
+                "englishName": "Somalia",
+                "chineseName": "索马里",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "254": {
+                "areaCodeList": [
+                    "254"
+                ],
+                "englishName": "Kenya",
+                "chineseName": "肯尼亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "255": {
+                "areaCodeList": [
+                    "255"
+                ],
+                "englishName": "Tanzania",
+                "chineseName": "坦桑尼亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "256": {
+                "areaCodeList": [
+                    "256"
+                ],
+                "englishName": "Uganda",
+                "chineseName": "乌干达",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "258": {
+                "areaCodeList": [
+                    "258"
+                ],
+                "englishName": "Mozambique",
+                "chineseName": "莫桑比克",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "260": {
+                "areaCodeList": [
+                    "260"
+                ],
+                "englishName": "Zambia",
+                "chineseName": "赞比亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "261": {
+                "areaCodeList": [
+                    "261"
+                ],
+                "englishName": "Madagascar",
+                "chineseName": "马达加斯加",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "262": {
+                "areaCodeList": [
+                    "262"
+                ],
+                "englishName": "Mayotte",
+                "chineseName": "马约特",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "263": {
+                "areaCodeList": [
+                    "263"
+                ],
+                "englishName": "Zimbabwe",
+                "chineseName": "津巴布韦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "264": {
+                "areaCodeList": [
+                    "264"
+                ],
+                "englishName": "Namibia",
+                "chineseName": "纳米比亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "265": {
+                "areaCodeList": [
+                    "265"
+                ],
+                "englishName": "Malawi",
+                "chineseName": "马拉维",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "351": {
+                "areaCodeList": [
+                    "351"
+                ],
+                "englishName": "Portugal",
+                "chineseName": "葡萄牙",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "352": {
+                "areaCodeList": [
+                    "352"
+                ],
+                "englishName": "Luxembourg",
+                "chineseName": "卢森堡",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "353": {
+                "areaCodeList": [
+                    "353"
+                ],
+                "englishName": "Ireland",
+                "chineseName": "爱尔兰",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "355": {
+                "areaCodeList": [
+                    "355"
+                ],
+                "englishName": "Albania",
+                "chineseName": "阿尔巴尼亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "358": {
+                "areaCodeList": [
+                    "358"
+                ],
+                "englishName": "Finland",
+                "chineseName": "芬兰",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "359": {
+                "areaCodeList": [
+                    "359"
+                ],
+                "englishName": "Bulgaria",
+                "chineseName": "保加利亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "375": {
+                "areaCodeList": [
+                    "375"
+                ],
+                "englishName": "Belarus",
+                "chineseName": "白俄罗斯",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "376": {
+                "areaCodeList": [
+                    "376"
+                ],
+                "englishName": "Andorra",
+                "chineseName": "安道尔",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "380": {
+                "areaCodeList": [
+                    "380"
+                ],
+                "englishName": "Ukraine",
+                "chineseName": "乌克兰",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "381": {
+                "areaCodeList": [
+                    "381"
+                ],
+                "englishName": "Serbia",
+                "chineseName": "塞尔维亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "385": {
+                "areaCodeList": [
+                    "385"
+                ],
+                "englishName": "Croatia",
+                "chineseName": "克罗地亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "387": {
+                "areaCodeList": [
+                    "387"
+                ],
+                "englishName": "Bosnia and Herzegovina",
+                "chineseName": "波斯尼亚和黑塞哥维那",
+                "lengthList": [
+                    "11",
+                    "12"
+                ]
+            },
+            "420": {
+                "areaCodeList": [
+                    "420"
+                ],
+                "englishName": "Czechia",
+                "chineseName": "捷克",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "421": {
+                "areaCodeList": [
+                    "421"
+                ],
+                "englishName": "Slovakia",
+                "chineseName": "斯洛伐克",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "590": {
+                "areaCodeList": [
+                    "590"
+                ],
+                "englishName": "Guadeloupe",
+                "chineseName": "瓜德罗普岛",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "594": {
+                "areaCodeList": [
+                    "594"
+                ],
+                "englishName": "French Guiana",
+                "chineseName": "法属圭亚那",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "595": {
+                "areaCodeList": [
+                    "595"
+                ],
+                "englishName": "Paraguay",
+                "chineseName": "巴拉圭",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "596": {
+                "areaCodeList": [
+                    "596"
+                ],
+                "englishName": "Martinique",
+                "chineseName": "马提尼克",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "855": {
+                "areaCodeList": [
+                    "855"
+                ],
+                "englishName": "Cambodia",
+                "chineseName": "柬埔寨",
+                "lengthList": [
+                    "11",
+                    "12"
+                ]
+            },
+            "886": {
+                "areaCodeList": [
+                    "886"
+                ],
+                "englishName": "Taiwan",
+                "chineseName": "中国台湾",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "962": {
+                "areaCodeList": [
+                    "962"
+                ],
+                "englishName": "Jordan",
+                "chineseName": "约旦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "966": {
+                "areaCodeList": [
+                    "966"
+                ],
+                "englishName": "Saudi Arabia",
+                "chineseName": "沙特阿拉伯",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "967": {
+                "areaCodeList": [
+                    "967"
+                ],
+                "englishName": "Yemen",
+                "chineseName": "也门",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "970": {
+                "areaCodeList": [
+                    "970"
+                ],
+                "englishName": "Palestine",
+                "chineseName": "巴勒斯坦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "971": {
+                "areaCodeList": [
+                    "971"
+                ],
+                "englishName": "United Arab Emirates",
+                "chineseName": "阿拉伯联合酋长国",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "972": {
+                "areaCodeList": [
+                    "972"
+                ],
+                "englishName": "Israel",
+                "chineseName": "以色列",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "992": {
+                "areaCodeList": [
+                    "992"
+                ],
+                "englishName": "Tajikistan",
+                "chineseName": "塔吉克斯坦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "994": {
+                "areaCodeList": [
+                    "994"
+                ],
+                "englishName": "Azerbaijan",
+                "chineseName": "阿塞拜疆",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "995": {
+                "areaCodeList": [
+                    "995"
+                ],
+                "englishName": "Georgia",
+                "chineseName": "格鲁吉亚",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "996": {
+                "areaCodeList": [
+                    "996"
+                ],
+                "englishName": "Kyrgyzstan",
+                "chineseName": "吉尔吉斯斯坦",
+                "lengthList": [
+                    "12"
+                ]
+            },
+            "998": {
+                "areaCodeList": [
+                    "998"
+                ],
+                "englishName": "Uzbekistan",
+                "chineseName": "乌兹别克斯坦",
+                "lengthList": [
+                    "12"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "3",
+            "2"
+        ]
+    },
+    "13": {
+        "areaCodeLengthMap": {
+            "49": {
+                "areaCodeList": [
+                    "49"
+                ],
+                "englishName": "Germany",
+                "chineseName": "德国",
+                "lengthList": [
+                    "13"
+                ]
+            },
+            "62": {
+                "areaCodeList": [
+                    "62"
+                ],
+                "englishName": "Indonesia",
+                "chineseName": "印度尼西亚",
+                "lengthList": [
+                    "12",
+                    "13"
+                ]
+            },
+            "86": {
+                "areaCodeList": [
+                    "86"
+                ],
+                "englishName": "Chinese Mainland",
+                "chineseName": "中国大陆",
+                "lengthList": [
+                    "13"
+                ]
+            },
+            "234": {
+                "areaCodeList": [
+                    "234"
+                ],
+                "englishName": "Nigeria",
+                "chineseName": "尼日利亚",
+                "lengthList": [
+                    "13"
+                ]
+            },
+            "856": {
+                "areaCodeList": [
+                    "856"
+                ],
+                "englishName": "Laos",
+                "chineseName": "老挝",
+                "lengthList": [
+                    "13"
+                ]
+            },
+            "964": {
+                "areaCodeList": [
+                    "964"
+                ],
+                "englishName": "Iraq",
+                "chineseName": "伊拉克",
+                "lengthList": [
+                    "13"
+                ]
+            },
+            "977": {
+                "areaCodeList": [
+                    "977"
+                ],
+                "englishName": "Nepal",
+                "chineseName": "尼泊尔",
+                "lengthList": [
+                    "13"
+                ]
+            }
+        },
+        "areaCodeLengthList": [
+            "3",
+            "2"
+        ]
+    }
+}

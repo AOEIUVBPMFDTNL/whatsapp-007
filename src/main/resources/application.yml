@@ -1,0 +1,41 @@
+spring:
+  output:
+    ansi:
+      enabled: DETECT
+  jackson:
+    default-property-inclusion: non_null
+  profiles:
+    active: dev
+  application:
+    name: whatsapp-android
+  #出现错误时，直接抛出异常,解决400异常捕捉
+  mvc:
+    throw-exception-if-no-handler-found: true
+  #不要为我们工程中的资源文件建立映射
+  resources.add-mappings: false
+#日志配置
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR
+#prometheus监控平台配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: configprops
+      base-path: /
+      path-mapping:
+        prometheus: wa_terminal_metrics
+  endpoint:
+    health:
+      show-details: ALWAYS
+  metrics:
+    tags:
+      application: ${spring.application.name}
+terminal:
+  version: 3.5.1

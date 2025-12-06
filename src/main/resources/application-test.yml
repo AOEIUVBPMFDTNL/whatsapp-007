@@ -1,0 +1,82 @@
+spring:
+  redis:
+    # Redis数据库索引（默认为 0）
+    database: 0
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis 密码
+    password: 123456
+    lettuce:
+      pool:
+        # 连接池中的最小空闲连接
+        min-idle: 8
+        # 连接池中的最大空闲连接
+        max-idle: 500
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 2000
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: 10000
+    # 连接超时时间（毫秒）
+    timeout: 30000ms
+#服务地址
+whatsapp:
+  serverAddr: http://172.31.0.95:84
+  domainName: http://test-ws.zc.lu
+register:
+  ocrUrl: http://172.31.0.119:80/api/getCaptcha
+  normalVersionRegisterInfo: { version: 2.23.24.75 , classesMd5Base64: BeZAU7zAuSkS1Ucp/QiJgQ== ,key: RFObk0NHtvEmCSluaRRbWDCd+U7QqKWi2UB4qOr/hwE+PZWmlkSqG5JGRlMsJ5+LzShVq1XyyLwWk623gAyI/w== }
+  businessVersionRegisterInfo: { version: 2.23.23.78 , classesMd5Base64: 9n4eEPL0Jhd/E+hwyWzSKg== ,key: VROA1coOL6M5ywTDPnPB/6CwjpIl2UjqEbIDpuf4TtgbPMj9sEhhi3gqtaG1PM/Jy4VODs6UQE7SMLcqzf/XVQ== }
+  # ios classesMd5Base64不变，key为version的md5
+  normalIosVersionRegisterInfo: { version: 2.23.23.81 , classesMd5Base64: 0a1mLfGUIBVrMKF1RdvLI5lkRBvof6vn0fD2QRSM ,key: bb59fda275cd3af1859cd1e57f78863d }
+  businessIosVersionRegisterInfo: { version: 2.23.23.82 , classesMd5Base64: USUDuDYDeQhY4RF2fCSp5m3F6kJ1M2J8wS7bbNA2 ,key: e5ce5ad25779416ab8f19e0e13ac3af5 }
+gcm:
+  version: 230775003
+  proxyType: 0
+  proxyHost: 5.161.74.164
+  proxyPort: 39001
+  proxyUsername: fans007
+  proxyPassword: fans888
+  apnsProxyType: 1
+  elfProxyList:
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-sg_city-_session-0pTmqNGw_lifetime-1440m:1"
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-id_city-_session-0pTmqNGw_lifetime-1440m:1"
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-my_city-_session-0pTmqNGw_lifetime-1440m:1"
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-th_city-_session-0pTmqNGw_lifetime-1440m:1"
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-vn_city-_session-0pTmqNGw_lifetime-1440m:1"
+    - "net.elfproxy.com:12325:rKB4GVCMO:12345678-0_country-za_city-_session-0pTmqNGw_lifetime-1440m:1"
+  iproyalProxyList:
+    - "geo.iproyal.com:32325:shangxin:benz888_country-sg_session-wKRRc0ye_lifetime-24h:1"
+    - "geo.iproyal.com:32325:shangxin:benz888_country-id_session-wKRRc0ye_lifetime-24h:1"
+    - "geo.iproyal.com:32325:shangxin:benz888_country-my_session-wKRRc0ye_lifetime-24h:1"
+    - "geo.iproyal.com:32325:shangxin:benz888_country-th_session-wKRRc0ye_lifetime-24h:1"
+    - "geo.iproyal.com:32325:shangxin:benz888_country-vn_session-wKRRc0ye_lifetime-24h:1"
+    - "geo.iproyal.com:32325:shangxin:benz888_country-za_session-wKRRc0ye_lifetime-24h:1"
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 800
+    accept-count: 10000
+
+  port: 85
+
+redis2:
+  database: 0
+  # Redis服务器地址
+  host: 172.31.0.95
+  # Redis服务器连接端口
+  port: 6379
+  # Redis 密码
+  password: nantian888
+  lettuce:
+    pool:
+      # 连接池中的最小空闲连接
+      min-idle: 3
+      # 连接池中的最大空闲连接
+      max-idle: 500
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 2000
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: 10000

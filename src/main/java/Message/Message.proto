@@ -1,0 +1,656 @@
+syntax = "proto2";
+
+package message;
+
+option java_package = "Message";
+option java_outer_classname = "WhatsMessage";
+
+message WhatsAppContextInfo
+{
+    optional string stanzaId_ = 1;
+    optional string participant_ = 2;
+    optional WhatsAppMessage quotedMessage_ = 3;
+    optional string remoteJid_ = 4;
+    repeated string mentionedJid = 15;
+    optional int32 editVersion_ = 16;
+    optional bool revokeMessage_ = 17;
+    optional string conversionSource_ = 18;
+    optional string conversionData_ = 19;
+    optional int32 conversionDelaySeconds_ = 20;
+    optional int32 forwardingScore_ = 21;
+    optional bool isForwarded_ = 22;
+    optional int32 expiredTime = 25;
+    optional int32 timestamp = 26;
+    optional ExternalAdReplyInfo externalAdReply_ = 28;
+    optional  string desc = 29;
+    optional string title = 30;
+    optional int32 bussinessid = 31;
+    optional ActionLink actionLink = 33;
+    optional BusinessMessageForwardInfo businessMessageForwardInfo_ = 44;
+    optional int32 pairedMediaType_ = 59;
+    optional int32  statusSourceType_ = 64;
+}
+
+message ExternalAdReplyInfo {
+    optional string title = 1;
+    optional string body = 2;
+    optional MediaType mediaType = 3;
+    optional string thumbnailUrl = 4;
+    optional string mediaUrl = 5;
+    optional bytes thumbnail = 6;
+    optional string sourceType = 7;
+    optional string sourceId = 8;
+    optional string sourceUrl = 9;
+    optional bool containsAutoReply = 10;
+    optional bool renderLargerThumbnail = 11;
+    optional bool showAdAttribution = 12;
+    optional string ctwaClid = 13;
+    optional string ref = 14;
+    optional bool clickToWhatsappCall = 15;
+    optional bool  adContextPreviewDismissed = 16;
+    optional string sourceApp = 17;
+    optional bool automatedGreetingMessageShown = 18;
+    optional string greetingMessageBody = 19;
+    optional string ctaPayload = 20;
+    optional bool disableNudg = 21;
+    optional string originalImageUrl = 22;
+    optional string automatedGreetingMessageCtaType = 24;
+    enum MediaType {
+        NONE = 0;
+        IMAGE = 1;
+        VIDEO = 2;
+    }
+}
+
+message BusinessMessageForwardInfo{
+    optional string businessOwnerJid_ = 1;
+}
+
+message ActionLink{
+    optional string url = 1;
+    optional string buttonTitle = 2;
+}
+
+message WhatsAppExtendedTextMessage
+{
+    optional string text_ = 1;
+    optional string matchedText_ = 2;
+    optional string canonicalUrl_ = 4;
+    optional string description_ = 5;
+    optional string title_ = 6;
+    optional fixed32 textArgb_ = 7;
+    optional fixed32 backgroundArgb_ = 8;
+    optional WhatsAppFont font_ = 9;
+    optional WhatsAppPreviewType previewType_ = 10;
+    optional string jpegThumbnail_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+    optional string thumbnailDirectPath_ = 19;
+    optional bytes thumbnailSha256_ = 20;
+    optional bytes thumbnailEncSha256_ = 21;
+    optional bytes mediaKey_ = 22;
+    optional int64 mediaKeyTimestamp_ = 23;
+    optional int32 thumbnailHeight_ = 24;
+    optional int32 thumbnailWidth_ = 25;
+    optional GroupType inviteLinkGroupTypeV2_ = 29;
+    optional bool viewOnce_ = 30;
+}
+
+enum GroupType
+{
+    DEFAULT = 0;
+    PARENT = 1;
+    SUB = 2;
+    DEFAULT_SUB = 3;
+}
+
+
+enum WhatsAppFont
+{
+    SANS_SERIF = 0;
+    SERIF = 1;
+    NORICAN_REGULAR = 2;
+    BRYNDAN_WRITE = 3;
+    BEBASNEUE_REGULAR = 4;
+    OSWALD_HEAVY = 5;
+}
+
+enum WhatsAppPreviewType
+{
+    PreviewType_NONE = 0;
+    PreviewType_VIDEO = 1;
+}
+
+message SenderKeyDistributionMessage {
+    optional uint32 id = 1;
+    optional uint32 iteration = 2;
+    optional bytes  chainKey = 3;
+    optional bytes  signingKey = 4;
+}
+
+
+message WhatsAppSenderKeyDistributionMessage {
+    optional string groupId_ = 1;
+    optional bytes  axolotlSenderKeyDistributionMessage_ = 2;
+}
+message WhatsAppInteractiveAnnotation
+{
+}
+
+message WhatsAppImageMessage
+{
+    optional string url_ = 1;
+    optional string mimetype_ = 2;
+    optional string caption_ = 3;
+    optional bytes fileSha256_ = 4;
+    optional int64 fileLength_ = 5;
+    optional int32 height_ = 6;
+    optional int32 width_ = 7;
+    optional bytes mediaKey_ = 8;
+    optional bytes fileEncSha256_ = 9;
+    repeated WhatsAppInteractiveAnnotation interactiveAnnotations_ = 10;
+    optional string directPath_ = 11;
+    optional int32 timestamp_ = 12;
+    optional bytes jpegThumbnail_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+    optional bytes firstScanSidecar_ = 18;
+    optional int32 firstScanLength_ = 19;
+    optional uint32 experimentGroupId = 20;
+    optional bytes scansSidecar = 21;
+    repeated uint32 scanLengths = 22;
+    optional bytes midQualityFileSha256 = 23;
+    optional bytes midQualityFileEncSha256 = 24;
+    optional bool viewOnce = 25;
+    optional string thumbnailDirectPath = 26;
+    optional bytes thumbnailSha256 = 27;
+    optional bytes thumbnailEncSha256 = 28;
+    optional string staticUrl = 29;
+    optional int32 imageSourceType_ = 31;
+}
+message WhatsAppContactMessage
+{
+    optional string displayName_ = 1;
+    optional string vcard_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+}
+
+message WhatsAppLocationMessage
+{
+    optional double degreesLatitude_ = 1;
+    optional double degreesLongitude_ = 2;
+    optional string name_ = 3;
+    optional string address_ = 4;
+    optional string url_ = 5;
+    optional bool isLive_ = 6;
+    optional int32 accuracyInMeters_ = 7;
+    optional fixed32 speedInMps_ = 8;
+    optional int32 degreesClockwiseFromMagneticNorth_ = 9;
+    optional string comment_ = 11;
+    optional bytes jpegThumbnail_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+}
+
+message WhatsAppDocumentMessage
+{
+    optional string url_ = 1;
+    optional string mimetype_ = 2;
+    optional string title_ = 3;
+    optional bytes fileSha256_ = 4;
+    optional int64 fileLength_ = 5;
+    optional int32 pageCount_ = 6;
+    optional bytes mediaKey_ = 7;
+    optional string fileName_ = 8;
+    optional bytes fileEncSha256_ = 9;
+    optional string directPath_ = 10;
+    optional string timestamp_ = 11;
+    optional bytes jpegThumbnail_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+    optional uint32 thumbnailHeight = 18;
+    optional uint32 thumbnailWidth = 19;
+    optional string caption = 20;
+}
+message WhatsAppAudioMessage
+{
+    optional string url_ = 1;
+    optional string mimetype_ = 2;
+    optional bytes fileSha256_ = 3;
+    optional int64 fileLength_ = 4;
+    optional int32 seconds_ = 5;
+    optional bool ptt_ = 6;
+    optional bytes mediaKey_ = 7;
+    optional bytes fileEncSha256_ = 8;
+    optional string directPath_ = 9;
+    optional int64 mediaKeyTimestamp = 10;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+    optional bytes streamingSidecar_ = 18;
+    optional bytes waveform = 19;
+    optional bool viewOnce_ = 21;
+}
+
+
+enum  WhatsAppGifAttr
+{
+    GifAttr_NONE = 0;
+    GifAttr_GIPHY = 1;
+    GifAttr_TENOR = 2;
+}
+
+message WhatsAppWebMessage {
+    optional string url_ = 1;
+    optional bytes   fileSha256_ = 2;
+    optional bytes   fileEncSha256_ = 3;
+    optional bytes   mediaKey_ = 4;
+
+    optional string mimetype_ = 5;
+    optional int32  width = 6;
+    optional int32  height = 7;
+    optional string directPath_ = 8;
+    optional int64 fileLength_ = 9;
+    optional int32 timestamp_ = 10;
+    optional WhatsAppContextInfo contextInfo = 17;
+}
+
+
+message WhatsAppVideoMessage
+{
+    optional string url_ = 1;
+    optional string mimetype_ = 2;
+    optional bytes fileSha256_ = 3;
+    optional int64 fileLength_ = 4;
+    optional int32 seconds_ = 5;
+    optional bytes mediaKey_ = 6;
+    optional string caption_ = 7;
+    optional bool gifPlayback_ = 8;
+    optional int32 height_ = 9;
+    optional int32 width_ = 10;
+    optional bytes fileEncSha256_ = 11;
+    repeated WhatsAppInteractiveAnnotation interactiveAnnotations_ = 12;
+    optional string directPath_ = 13;
+    optional int32 timestamp_ = 14;
+    optional bytes jpegThumbnail_ = 16;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+    optional bytes streamingSidecar_ = 18;
+    optional WhatsAppGifAttr gifAttribution_ = 19;
+    optional bool viewOnce_ = 20;
+    optional string thumbnailDirectPath_ = 21;
+    optional bytes thumbnailSha256_ = 22;
+    optional bytes thumbnailEncSha256_ = 23;
+    optional string staticUrl_ = 24;
+    repeated WhatsAppInteractiveAnnotation annotations_ = 25;
+    optional string accessibilityLabel_ = 26;
+    optional bytes processedVideos_ = 27;
+}
+
+message WhatsAppCall
+{
+    required bytes callkey = 1;
+}
+message WhatsAppChat
+{
+}
+
+message InitialSecurityNotificationSettingSync {
+    optional bool security_notification_enabled = 1;
+}
+
+message WhatsAppProtocolMessage
+{
+    message MessageKey
+    {
+        optional string remoteJid_ = 1;
+        optional int32 fromMe_ = 2;
+        optional string id_ = 3;
+        optional string participant_ = 4;
+    }
+    optional MessageKey key = 1;
+    optional WhatsAppProtocolMessageType type = 2;
+    optional uint32 ephemeral_expiration = 4;
+    optional int64 ephemeral_setting_timestamp = 5;
+    optional HistorySyncNotification history_sync_notification = 6;
+    optional AppStateSyncKeyShare app_state_sync_key_share = 7;
+    optional AppStateSyncKeyRequest app_state_sync_key_request = 8;
+    optional InitialSecurityNotificationSettingSync initial_security_notification_setting_sync = 9;
+}
+
+message WhatsAppContactsArrayMessage
+{
+    optional string displayName_ = 1;
+    repeated WhatsAppContactMessage contacts_ = 2;
+    optional WhatsAppContextInfo contextInfo_ = 17;
+}
+
+message WhatsAppHighlyStructuredMessage
+{
+}
+
+message WhatsAppSendPaymentMessage
+{
+}
+message WhatsAppRequestPaymentMessage
+{
+}
+
+message WhatsAppLiveLocationMessage
+{
+}
+
+message WhatsAppStickerMessage
+{
+}
+
+message FacebookInvite {
+    message unknow8
+    {
+        message unknow2 {
+            optional string title = 1;
+            optional string url = 2;
+        }
+        optional  unknow2 unknow2_ = 2;
+
+        optional int32 u4 = 4;
+    }
+    optional string content = 6;
+
+    optional unknow8 unknow8_ = 8;
+    optional string phone_ = 9;
+}
+
+
+message WhatsAppUnknow25 {
+    optional  FacebookInvite facebook = 4;
+}
+
+message WhatsAppTimeLimitMessage {
+    message Content
+    {
+        optional WhatsAppImageMessage imageMessage_ = 3;
+        optional WhatsAppContactMessage contactMessage_ = 4;
+        optional WhatsAppLocationMessage locationMessage_ = 5;
+        optional WhatsAppExtendedTextMessage extendedTextMessage_ = 6;
+        optional WhatsAppDocumentMessage documentMessage_ = 7;
+        optional WhatsAppAudioMessage audioMessage_ = 8;
+        optional WhatsAppVideoMessage videoMessage_ = 9;
+        optional WhatsAppCall call_ = 10;
+        optional WhatsAppChat chat_ = 11;
+        optional WhatsAppProtocolMessage protocolMessage_ = 12;
+        optional WhatsAppContactsArrayMessage contactsArrayMessage_ = 13;
+        optional WhatsAppHighlyStructuredMessage highlyStructuredMessage_ = 14;
+        optional WhatsAppSenderKeyDistributionMessage fastRatchetKeySenderKeyDistributionMessage_ = 15;
+        optional WhatsAppSendPaymentMessage sendPaymentMessage_ = 16;
+        optional WhatsAppRequestPaymentMessage requestPaymentMessage_ = 17;
+        optional WhatsAppLiveLocationMessage liveLocationMessage_ = 18;
+        optional WhatsAppStickerMessage stickerMessage_ = 20;
+        optional WhatsAppUnknow25 unknow25_ = 25;
+        optional WhatsAppWebMessage webMessage_ = 26;
+    }
+
+    optional Content content = 1;
+}
+
+message ReactionMessage {
+    optional MessageKey key = 1;
+    optional string text = 2;
+    optional string grouping_key = 3;
+    optional int64 sender_timestamp_ms = 4;
+}
+
+message MessageKey {
+    optional string remote_jid = 1;
+    optional bool from_me = 2;
+    optional string id = 3;
+    optional string participant = 4;
+}
+
+message FutureProofMessage {
+    optional WhatsAppMessage message = 1;
+}
+
+message WhatsAppMessage
+{
+    optional string conversation_ = 1;
+    optional WhatsAppSenderKeyDistributionMessage senderKeyDistributionMessage_ = 2;
+    optional WhatsAppImageMessage imageMessage_ = 3;
+    optional WhatsAppContactMessage contactMessage_ = 4;
+    optional WhatsAppLocationMessage locationMessage_ = 5;
+    optional WhatsAppExtendedTextMessage extendedTextMessage_ = 6;
+    optional WhatsAppDocumentMessage documentMessage_ = 7;
+    optional WhatsAppAudioMessage audioMessage_ = 8;
+    optional WhatsAppVideoMessage videoMessage_ = 9;
+    optional WhatsAppCall call_ = 10;
+    optional WhatsAppChat chat_ = 11;
+    optional WhatsAppProtocolMessage protocolMessage_ = 12;
+    optional WhatsAppContactsArrayMessage contactsArrayMessage_ = 13;
+    optional WhatsAppHighlyStructuredMessage highlyStructuredMessage_ = 14;
+    optional WhatsAppSenderKeyDistributionMessage fastRatchetKeySenderKeyDistributionMessage_ = 15;
+    optional WhatsAppSendPaymentMessage sendPaymentMessage_ = 16;
+    optional WhatsAppRequestPaymentMessage requestPaymentMessage_ = 17;
+    optional WhatsAppLiveLocationMessage liveLocationMessage_ = 18;
+    optional WhatsAppStickerMessage stickerMessage_ = 20;
+    optional WhatsAppUnknow25 unknow25_ = 25;
+    optional WhatsAppWebMessage webMessage_ = 26;
+    optional MessageContextInfo messageContextInfo = 35;
+    optional WhatsAppTimeLimitMessage timeLimitMessage_ = 40;
+    optional ReactionMessage reaction_message = 46;
+    optional FutureProofMessage documentWithCaptionMessage = 53;
+    optional WhatsAppMessage viewOnceMessage_ = 37;
+    optional FutureProofMessage lottieStickerMessage = 74;
+
+}
+
+message MessageContextInfo {
+    optional DeviceListMetadata deviceListMetadata = 1;
+    optional int32 deviceListMetadataVersion = 2;
+    optional bytes messageSecret = 3;
+    optional bytes paddingBytes = 4;
+    optional uint32 messageAddOnDurationInSecs = 5;
+    optional bytes botMessageSecret = 6;
+    //    optional BotMetadata botMetadata = 7;
+    optional int32 reportingTokenVersion = 8;
+}
+
+enum ADVEncryptionType {
+    E2EE = 0;
+    HOSTED = 1;
+}
+
+message DeviceListMetadata {
+    optional bytes senderKeyHash = 1;
+    optional uint64 senderTimestamp = 2;
+    repeated uint32 senderKeyIndexes = 3 [packed=true];
+    optional ADVEncryptionType senderAccountType = 4;
+    optional ADVEncryptionType receiverAccountType = 5;
+    optional bytes recipientKeyHash = 8;
+    optional uint64 recipientTimestamp = 9;
+    repeated uint32 recipientKeyIndexes = 10 [packed=true];
+}
+
+
+message Verified {
+    optional VerifiedOne verifiedOne = 1;
+    message VerifiedOne {
+        optional uint64 verifiedOne1 = 1;
+        optional string verifiedOne2 = 2;
+        optional string verifiedOne4 = 4;
+    }
+    optional bytes verifiedTow = 2;
+}
+
+
+enum  WhatsAppProtocolMessageType
+{
+    REVOKE = 0;
+    EPHEMERAL_SETTING = 3;
+    EPHEMERAL_SYNC_RESPONSE = 4;
+    HISTORY_SYNC_NOTIFICATION = 5;
+    APP_STATE_SYNC_KEY_SHARE = 6;
+    APP_STATE_SYNC_KEY_REQUEST = 7;
+    MSG_FANOUT_BACKFILL_REQUEST = 8;
+    INITIAL_SECURITY_NOTIFICATION_SETTING_SYNC = 9;
+}
+
+
+message HistorySyncNotification {
+    optional bytes file_sha256 = 1;
+    optional uint64 file_length = 2;
+    optional bytes media_key = 3;
+    optional bytes file_enc_sha256 = 4;
+    optional string direct_path = 5;
+    optional HistorySyncType sync_type = 6;
+    optional uint32 chunk_order = 7;
+    optional string original_message_id = 8;
+
+    enum HistorySyncType {
+        INITIAL_BOOTSTRAP = 0;
+        INITIAL_STATUS_V3 = 1;
+        FULL = 2;
+        RECENT = 3;
+        PUSH_NAME = 4;
+    }
+}
+message AppStateSyncKeyId {
+    optional bytes key_id = 1;
+}
+
+message AppStateSyncKeyFingerprint {
+    optional uint32 raw_id = 1;
+    optional uint32 current_index = 2;
+    repeated int64 device_indexes = 3 [packed = true];
+}
+
+
+message AppStateSyncKeyData {
+    optional bytes key_data = 1;
+    optional AppStateSyncKeyFingerprint fingerprint = 2;
+    optional int64 timestamp = 3;
+}
+
+message AppStateSyncKey {
+    optional AppStateSyncKeyId key_id = 1;
+    optional AppStateSyncKeyData key_data = 2;
+}
+
+message AppStateSyncKeyShare {
+    repeated AppStateSyncKey keys = 1;
+}
+
+message AppStateSyncKeyRequest {
+    repeated AppStateSyncKeyId key_ids = 1;
+}
+
+message SyncAppState {
+    message st1 {
+        optional int64  i1 = 1;
+    }
+    optional st1 s1 = 1;
+
+    message st2 {
+
+    }
+    repeated st2 s2 = 2;
+
+    message st3 {
+        optional bytes b1 = 1;
+        optional string s2 = 2;
+        optional string s3 = 3;
+        optional int64  i4 = 4;
+        optional bytes b5 = 5;
+        optional bytes b6 = 6;
+    }
+    optional st3 s3 = 3;
+
+
+    optional bytes s4 = 4;
+
+    optional bytes s5 = 5;
+    message st6 {
+        optional bytes s1 = 1;
+    }
+    optional st6 s6 = 6;
+    message st7 {
+        optional int64  i1 = 1;
+        optional string s2 = 2;
+    }
+    optional st7 s7 = 7;
+    optional int32 i8 = 8;
+}
+
+
+message Qrcode3LT {
+    //开始随机生成一个
+    optional int32 adv_raw_id = 1;
+    optional int64 timestamp = 2;
+    //累加
+    optional int32 adv_current_key_index = 3;
+}
+
+message Qrcode3LU {
+    //开始随机生成一个
+    optional int32 adv_raw_id = 1;
+    optional int64 timestamp = 2;
+    //累加
+    optional int32 adv_current_key_index = 3;
+    repeated int32 unknown = 4 [packed = true];
+}
+
+message Qrcode3LS {
+    optional bytes Qrcode3LT_ = 1;
+
+    optional bytes unknown_2 = 2;
+    optional bytes unknown_3 = 3;
+
+    optional bytes unknown_4 = 4;
+}
+
+message Qrcode3LY {
+    //开始随机生成一个
+    optional bytes unknown_1 = 1;
+
+    optional bytes unknown_2 = 2;
+}
+
+
+message Qrcode3LV {
+    optional bytes unknown_1 = 1;
+    optional bytes unknown_2 = 2;
+}
+
+message Qrcode3Jt {
+
+    message m1 {
+        optional uint64 u1 = 1;
+    }
+    message m2 {
+        optional int32 u1 = 1;
+        message m22 {
+            optional AppStateSyncKeyId m22_1 = 1;
+            optional AppStateSyncKeyId m22_2 = 2;
+            optional AppStateSyncKeyId m22_3 = 3;
+        }
+        optional m22 u2 = 2;
+    }
+
+    optional m1 u1 = 1;
+    repeated m2 u2 = 2;
+
+    optional bytes  u4 = 4;
+    optional bytes  u5 = 5;
+    optional  AppStateSyncKeyId u6 = 6;
+
+    optional int32 u8 = 8;
+}
+
+
+message Qrcode3Js {
+    optional bytes jsonArrayName = 1;
+
+    message m2 {
+        message content {
+            optional string value = 1;
+        }
+        optional int64 timestamp = 1;
+        optional content push_name = 7;
+        optional content setting_locale = 16;
+    }
+    optional  m2 u2 = 2;
+    optional bytes u3 = 3;
+    optional int32  u4 = 4;
+}

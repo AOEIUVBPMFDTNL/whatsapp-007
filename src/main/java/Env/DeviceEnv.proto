@@ -1,0 +1,387 @@
+syntax = "proto2";
+
+
+option java_package = "Env";
+option java_outer_classname = "DeviceEnv";
+
+
+enum Platform
+{
+  ANDROID = 0;
+  IOS = 1;
+  WINDOWS_PHONE = 2;
+  BLACKBERRY = 3;
+  BLACKBERRYX = 4;
+  S40 = 5;
+  S60 = 6;
+  PYTHON_CLIENT = 7;
+  TIZEN = 8;
+  ENTERPRISE = 9;
+  SMB_ANDROID = 10;
+  KAIOS = 11;
+  SMB_IOS = 12;
+  WINDOWS = 13;
+  WEB = 14;
+  PAGE = 23;
+}
+
+message AppVersion
+{
+  optional int32 primary_ = 1;
+  optional int32 secondary_ = 2;
+  optional int32 tertiary_ = 3;
+  optional int32 quaternary_ = 4;
+  optional int32 quinary_ = 5;
+}
+
+enum ReleaseChannel
+{
+  RELEASE = 0;
+  BETA = 1;
+  ALPHA = 2;
+  DEBUG = 3;
+}
+enum DeviceType {
+  PHONE = 0;
+  TABLET = 1;
+  DESKTOP = 2;
+  WEARABLE = 3;
+  VR = 4;
+}
+message UserAgent
+{
+  optional Platform platform_ = 1;
+  optional AppVersion appVersion_ = 2;
+  optional string mcc_ = 3;
+  optional string mnc_ = 4;
+  optional string osVersion_ = 5;
+  optional string manufacturer_ = 6;
+  optional string device_ = 7;
+  //ro.build.description
+  optional string osBuildNumber_ = 8;  //Build.DISPLAY
+  optional string phoneId_ = 9;
+  optional ReleaseChannel releaseChannel_ = 10;
+  optional string localeLanguageIso6391_ = 11;
+  optional string localeCountryIso31661Alpha2_ = 12;
+  optional string cpu_chip = 13; //Build.BOARD
+  //安卓uuid，带横线
+  optional string deviceExpId = 14;
+  //固定PHONE
+  optional DeviceType deviceType = 15;
+  optional string deviceModelType = 16;
+}
+
+message KeyPair
+{
+  required bytes strPubKey = 1;
+  required bytes strPrivateKey = 2;
+}
+
+
+message AndroidEnv
+{
+  required string fullphone = 1;
+  required KeyPair client_static_keyPair = 2; //保存在xml 里面的
+  optional string pushname = 3;
+  optional bytes server_static_public = 4;
+  //设备 generateDeviceId
+  required bytes expid = 5;
+  //phone id_
+  required string fdid = 6;
+  optional bytes edge_routing_info = 7;
+  optional string chat_dns_domain = 8;
+  optional UserAgent userAgent_ = 9;
+  optional  bool passive = 10;
+  //注册需要用到，保存起来，注册都需要
+  optional int32 pid = 11;
+  //运营商 China Mobile GSM
+  optional string network_operator_name = 12;
+  optional int32 connection_lc = 13;
+  //backup_token
+  optional bytes backup_token = 14;
+  //orignal token
+  optional string orignal_token = 15;
+  //shared_secret
+  optional string shared_secret = 16;
+  optional CompanionRegData regdata = 17;
+  optional string verifyed_name = 18;
+}
+
+message RegisterParams {
+  required string cc = 1;
+  required string phone = 2;
+  required bytes  regid = 3;
+  required bytes identity = 4;
+  required bytes skey_id = 5;
+  required bytes skey_val = 6;
+  required bytes skey_sig = 7;
+  optional string code = 8;
+}
+
+
+message ClientHello
+{
+  optional bytes ephemeral_ = 1; //第一次登陆时临时生成的一个公钥
+  optional bytes static_ = 2;
+  optional bytes payload_ = 3;
+}
+
+message ServerHello
+{
+  optional bytes ephemeral_ = 1; //第一次登陆时临时生成的一个公钥
+  optional bytes static_ = 2;
+  optional bytes payload_ = 3;
+}
+
+message ClientFinish
+{
+  optional bytes static_ = 1;
+  optional bytes payload_ = 2;
+}
+
+message HandshakeMessage
+{
+  optional ClientHello clientHello_ = 2;
+  optional ServerHello serverHello_ = 3;
+  optional ClientFinish clientFinish_ = 4;
+}
+
+
+
+message NoiseCertificate
+{
+  optional bytes details_ = 1;
+  optional bytes signature_ = 2;
+
+
+  message Details{
+    optional uint32 serial = 1;
+    optional string issuer = 2;
+    optional uint64 expires = 3;
+    optional string subject = 4;
+    optional bytes key = 5;
+  }
+}
+
+message CertificateDetails
+{
+  optional int32 serial_ = 1;
+  optional string issuer_ = 2;
+  optional int64 expires_ = 3;
+  optional string subject_ = 4;
+  optional bytes  key = 5;
+}
+
+message WebInfo{
+  optional string ref_token = 1;
+  optional string version = 2;
+  optional WebdPayload webd_payload = 3;
+
+  message WebdPayload{
+    optional bool uses_participant_in_key = 1;
+    optional bool supports_starred_messages = 2 [deprecated = true];
+    optional bool supports_document_messages = 3 [deprecated = true];
+    optional bool supports_url_messages = 4 [deprecated = true];
+    optional bool supports_media_retry = 5 [deprecated = true];
+    optional bool supports_e2e_image = 6 [deprecated = true];
+    optional bool supports_e2e_video = 7 [deprecated = true];
+    optional bool supports_e2e_audio = 8 [deprecated = true];
+    optional bool supports_e2e_document = 9 [deprecated = true];
+    optional string document_types = 10 [deprecated = true];
+    optional bytes features = 11;
+  }
+}
+
+enum ConnectType
+{
+  CELLULAR_UNKNOWN = 0;
+  WIFI_UNKNOWN = 1;
+  CELLULAR_EDGE = 100;
+  CELLULAR_IDEN = 101;
+  CELLULAR_UMTS = 102;
+  CELLULAR_EVDO = 103;
+  CELLULAR_GPRS = 104;
+  CELLULAR_HSDPA = 105;
+  CELLULAR_HSUPA = 106;
+  CELLULAR_HSPA = 107;
+  CELLULAR_CDMA = 108;
+  CELLULAR_1XRTT = 109;
+  CELLULAR_EHRPD = 110;
+  CELLULAR_LTE = 111;
+  CELLULAR_HSPAP = 112;
+}
+
+enum ConnectReason
+{
+  PUSH = 0;
+  USER_ACTIVATED = 1;
+  SCHEDULED = 2;
+  ERROR_RECONNECT = 3;
+  NETWORK_SWITCH = 4;
+  PING_RECONNECT = 5;
+}
+
+enum iosAppExtension
+{
+  SHARE_EXTENSION = 0;
+  SERVICE_EXTENSION = 1;
+  NTENTS_EXTENSION = 2;
+}
+
+/*
+1: 66659573936
+3: 0
+5 {
+  1: 10
+  2 {
+    1: 2
+    2: 21
+    3: 22
+    4: 8
+  }
+  3: "460"
+  4: "000"
+  5: "7.1.2"
+  6: "OnePlus"
+  7: "HD1910"
+  8: "OnePlus-user 7.1.2 20171130.276299 release-keys"
+  9: "97d59acf-89eb-4fd0-8718-04762284b74e"
+  10: 1
+  11: "zh"
+  12: "CN"
+  13: "SM8150-AC" //cpu 代号
+}
+7: "abc"
+9: 0x5bb910ac
+10: 1
+12: 1
+15 {
+  15: 0
+  16: 0
+}
+16: 1
+23: 1
+24: 24
+*/
+
+
+/*
+真机
+username_: 8617748754950
+passive_: false
+userAgent_ {
+  platform_: ANDROID
+  appVersion_ {
+    primary_: 2
+    secondary_: 21
+    tertiary_: 20
+    quaternary_: 21
+  }
+  mcc_: "000"
+  mnc_: "000"
+  osVersion_: "9"
+  manufacturer_: "Google"
+  device_: "sailfish"
+  osBuildNumber_: "PQ3A.190801.002"
+  phoneId_: "115934b1-5cfc-4a26-99ac-58d61368320c"
+  localeLanguageIso6391_: "zh"
+  localeCountryIso31661Alpha2_: "CN"
+  13: "sailfish"
+}
+pushName: "sunnoc"
+sessionId_: 3757736112
+shortConnect_: true
+connectType_: WIFI_UNKNOWN
+23: 1
+24: 15
+
+*/
+
+/*
+模拟器
+username_: 8615228092350
+passive_: true
+userAgent_ {
+  platform_: ANDROID
+  appVersion_ {
+    primary_: 2
+    secondary_: 21
+    tertiary_: 20
+    quaternary_: 21
+  }
+  mcc_: "310"
+  mnc_: "410"
+  osVersion_: "5.1.1"
+  manufacturer_: "samsung"
+  device_: "aosp"
+  osBuildNumber_: "LMY48Z"
+  phoneId_: "5e7723b3-8a8c-49f0-918f-75594f3ffd8b"
+  localeLanguageIso6391_: "en"
+  localeCountryIso31661Alpha2_: "US"
+  13: "SM-A805N"   //Build.BOARD
+}
+sessionId_: 79888724
+shortConnect_: true
+connectType_: WIFI_UNKNOWN
+23: 1
+24: 0
+
+*/
+
+message DNSSource{
+  optional DNSResolutionMethod dns_method = 15;
+  optional bool app_cached = 16;
+
+  enum DNSResolutionMethod{
+    SYSTEM = 0;
+    GOOGLE = 1;
+    HARDCODED = 2;
+    OVERRIDE = 3;
+    FALLBACK = 4;
+  }
+}
+
+message CompanionRegData{
+  optional bytes e_regid = 1;
+  optional bytes e_keytype = 2;
+  optional bytes e_ident = 3;
+  optional bytes e_skey_id = 4;
+  optional bytes e_skey_val = 5;
+  optional bytes e_skey_sig = 6;
+  optional bytes build_hash = 7;
+  optional bytes companion_props = 8;
+}
+
+enum Product {
+  WHATSAPP = 0;
+  MESSENGER = 1;
+  INTEROP = 2;
+  INTEROP_MSGR = 3;
+}
+
+message ClientPayload
+{
+  optional int64 username_ = 1;
+  optional bool passive_ = 3;
+  repeated int32 clientFeatures_ = 4;
+  optional UserAgent userAgent_ = 5;
+  optional WebInfo webInfo_ = 6;
+  optional string pushName = 7;
+  optional fixed32 sessionId_ = 9;
+  optional bool shortConnect_ = 10;
+  optional ConnectType connectType_ = 12;
+  optional ConnectReason connectReason_ = 13;
+  repeated fixed32 shards = 14;
+  optional DNSSource dns = 15;
+  optional int32  connect_attempt_count = 16;
+  optional int32  agent = 17;
+  optional int32  device = 18;
+  optional CompanionRegData reg_data = 19;
+  optional Product product = 20;
+  optional bool  oc = 23; //是否正常版本 true
+  optional int32 connectionLc = 24;
+  optional iosAppExtension iosAppExtension_ = 30;
+  optional bool pull = 33;
+  optional int32 memoryTotal = 36;
+  optional int32 memoryClass = 37;
+}

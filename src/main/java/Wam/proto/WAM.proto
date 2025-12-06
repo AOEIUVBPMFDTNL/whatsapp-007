@@ -1,0 +1,306 @@
+syntax = "proto2";
+package Wam;
+
+option java_package = "Wam.proto";
+option java_outer_classname = "WamProto";
+option java_multiple_files = true;
+
+//enum TsNavigationNumber {
+//    PRIVACY_PAGE = 1;   // 设置界面下所有的页面都是这个
+//    FANS_CHAT_PAGE = 4; // 粉丝聊天界面
+//    FANS_DETAIL_PAGE = 5; // 粉丝详情页
+//    MAIN_PAGE = 6;  // 主界面
+//    SETTING_PAGE = 22; // 设置界面
+//    CALL_PAGE = 15;  // 主界面下的语音通话记录界面
+//    STATUS_PAGE = 17;  // 主界面下的动态消息界面
+//}
+
+
+message WamRecord {
+  optional int64 timestamp = 47; // unknown field
+  optional string ab_key = 2141; // unknown type
+  optional string ab_key2 = 4473;
+  optional int64 app_build = 1657;
+  optional int64 app_distribution = 1659;
+  optional int64 app_is_beta_release = 21;
+  optional string app_version = 17;
+  optional string calling_test_bucket = 15953; // unknown type
+  optional int64 device_classification = 14507;
+  optional string device_name = 13;
+  optional string device_version = 4505; // unknown type
+  optional string expo_key = 5029;
+  optional string iphone_os_build_number = 7825;
+  optional int64 iphone_process = 387;
+  optional string iphone_sdk_version = 9337;
+  optional int64 is_companion = 12027; // unknown type
+  optional int64 is_md_opt_in = 7335;
+  optional int64 mcc = 5;
+  optional int64 mem_class = 655; // unknown type
+  optional int64 mnc = 3;
+  optional string mobile_build_number = 15611; // unknown type
+  optional int64 network_is_wifi = 23;
+  optional int64 network_radio_type = 105;
+  optional int64 oc_version = 6251;
+  optional string os_version = 15;
+  optional int64 platform = 11;
+  optional string product = 7257;         // unknown type
+  optional string ps_country_code = 6833; // unknown type
+  optional string ps_id = 6005;           // unknown type
+  optional int64 service_improvement_opt_out = 13293;
+  optional string stream_id = 3543;                    // unknown type
+  optional string user_activity_logging_method = 2087; // unknown type
+  optional string wameta_logger_test_filter = 15881;   // unknown type
+  optional string webc_phone_platform = 707;           // unknown type
+  optional int64 total_memory = 689;                    // unknown type
+  optional int64 year_class_2016 = 2617;              // unknown type
+  optional string model = 287;
+  optional string manufacturer = 289;
+  optional int64 number_of_inactive_accounts = 15265;
+  optional string location = 2795;
+  optional string device = 495;
+  optional int64 screen_diagonal = 12017;
+  optional int64 is_google_play_install = 10255;
+
+
+  repeated WamEvent events = 65535; // unknown field
+}
+
+message WamEventFsMissedUpdates {
+  //
+}
+
+message WamEventTsBitArray {
+  optional int64 bitarray_high = 1;         // unknown type
+  optional int64 bitarray_length = 2;       // unknown type
+  optional int64 bitarray_low = 3;          // unknown type
+  optional int64 cumulative_bits = 4;       // unknown type
+  optional int64 relative_timestamp_ms = 5; // unknown type
+  optional int64 session_seq = 6;
+  optional int64 ts_session_id = 7;
+  optional int64 ts_timestamp_ms = 8;
+  optional string unified_session_id = 9;
+}
+
+message WamEventStickerCommonQueryToStaticServer {
+  optional int64 http_response_code = 2; // unknown type
+  optional string params = 3;
+  optional int64 query_latency_ms = 4;  // unknown type
+  optional int64 query_type_number = 1; // unknown type
+
+}
+
+message WamEventExposuresSend {
+  //
+}
+
+
+
+message WamEvent {
+  optional int64 timestamp = 47;     // unknown field
+  optional WamEventTsNavigation WamEventTsNavigation = 4334;
+  optional WamEventStickerCommonQueryToStaticServer WamEventStickerCommonQueryToStaticServer = 2740;
+  optional WamEventTsBitArray WamEventTsBitArray = 4332;
+  optional WamEventFsMissedUpdates WamEventFsMissedUpdates = 2;
+  optional WamEventExposuresSend WamEventExposuresSend = 3996;
+  optional WamEventAdvPrimaryIdentityMissing WamEventAdvPrimaryIdentityMissing = 3044;
+  optional WamEventBannerEvent WamEventBannerEvent = 1578;
+  optional WamEventQbmIncomingMessage WamEventQbmIncomingMessage = 3790;
+  optional WamAndroidPerfTimer WamAndroidPerfTimer = 2052;
+  optional WamEventProfilePicDownload WamEventProfilePicDownload = 848;
+  optional WamEventPrekeysFetch WamEventPrekeysFetch = 2540;
+  optional WamEventAdvStoredTimestampExpired WamEventAdvStoredTimestampExpired = 3036;
+  optional WamEventMessageReceive WamEventMessageReceive = 450;
+  optional WamEventE2eMessageRecv WamEventE2eMessageRecv = 478;
+  optional WamEventWamLogin WamEventWamLogin = 460;
+  optional WamEntryPointConversion WamEntryPointConversion = 2784;
+  optional WamWefrClientExposure WamWefrClientExposure = 5504;
+}
+
+message WamEventBannerEvent {
+  optional string banner_id = 3;
+  optional int64 banner_operation_number = 2; // unknown type
+  optional int64 banner_type_number = 1;      // unknown type
+}
+
+message WamEventTsNavigation {
+  optional string cid = 19;
+  optional int64 entry_point_conversation_initiated_number = 23; // unknown type
+  optional int64 group_size = 1;                                 // unknown type
+  optional int64 is_catalog_visible = 29;                        // unknown type
+  optional int64 is_cloudapi = 26;                               // unknown type
+  optional int64 is_onpremises = 27;                             // unknown type
+  optional int64 is_smb = 28;                                    // unknown type
+  optional int64 navigation_destination_number = 2;              // unknown type
+  optional int64 navigation_source_number = 3;                   // unknown type
+  optional int64 relative_timestamp_ms = 4;                      // unknown typeton
+  optional string smb_catalog_business_vertical = 20;
+  optional int64 smb_catalog_is_catalog_visible = 21; // unknown type
+  optional int64 thread_type_number = 7;              // unknown type
+  optional int64 ts_session_id = 5;                   // unknown type
+  optional int64 type_of_group_number = 6;            // unknown type
+  optional string entry_point_conversion_app = 24;
+  optional string entry_point_conversion_source = 25;
+  optional int64 referrerAction = 31;
+  optional int64 tsTimestampMs = 32;
+  optional string unifiedSessionId = 33;
+}
+
+message WamEventAdvPrimaryIdentityMissing {
+  optional int64 primary_identity_missing_proto_type_number = 1; // unknown type
+}
+
+message WamEventQbmIncomingMessage {
+  optional int64 api_daily_thread_count_7d = 21;  // unknown type
+  optional int64 api_message_count_1d = 22;       // unknown type
+  optional int64 api_message_count_7d = 23;       // unknown type
+  optional int64 api_unique_thread_count_7d = 25; // unknown type
+  optional int64 chats_folder_type_number = 1;    // unknown type
+  optional int64 companion_devices = 10;          // unknown type
+  optional int64 contact_type_number = 2;         // unknown type
+  optional string hsm_tag_str = 14;
+  optional int64 is_from_ads_manager_mm = 15;                    // unknown type
+  optional int64 is_from_capi = 16;                              // unknown type
+  optional int64 is_muted = 20;                                  // unknown type
+  optional int64 last_outgoing_message_delta_time_received = 13; // unknown type
+  optional int64 message_has_button = 18;                        // unknown type
+  optional int64 message_has_url = 19;                           // unknown type
+  optional string message_id_hmac = 17;
+  optional string message_type_str = 7;
+  optional int64 muted = 4;                // unknown type
+  optional int64 notification_enabled = 5; // unknown type
+  optional int64 qbm_flag_number = 6;      // unknown type
+  optional string qbm_flag_str = 12;
+  optional int64 read_receipts_enabled = 9;       // unknown type
+  optional int64 smb_daily_thread_count_7d = 28;  // unknown type
+  optional int64 smb_message_count_1d = 29;       // unknown type
+  optional int64 smb_message_count_7d = 30;       // unknown type
+  optional int64 smb_total_message_count = 31;    // unknown type
+  optional int64 smb_total_new_thread_count = 32; // unknown type
+  optional int64 smb_unique_thread_count_1d = 33; // unknown type
+  optional int64 smb_unique_thread_count_7d = 34; // unknown type
+  optional string thread_id_hmac = 8;
+  optional int64 keepChatsArchivedEnabled = 3;
+  optional int64 lastOutgoingMessageDeltaTime = 11;
+  optional int64 threadCreationTime = 35;
+}
+
+message WamAndroidPerfTimer {
+  optional int64 androidPerfDuration = 1;
+  optional string androidPerfExtraData = 3;
+  optional string androidPerfName = 2;
+}
+message WamEventProfilePicDownload {
+  optional int64 profile_pic_download_http_code = 5;     // unknown type
+  optional int64 profile_pic_download_result_number = 1; // unknown type
+  optional int64 profile_pic_download_size = 4;          // unknown type
+  optional int64 profile_pic_download_t = 3;             // unknown type
+  optional int64 profile_pic_type_number = 2;            // unknown type
+}
+message WamEventPrekeysFetch {
+  optional int64 on_identity_change = 1;           // unknown type
+  optional int64 prekeys_fetch_context_number = 3; // unknown type
+  optional int64 prekeys_fetch_count = 2;          // unknown type
+}
+
+message WamEventAdvStoredTimestampExpired {
+  optional int64 adv_expire_time_in_hours = 1; // unknown type
+}
+
+message WamEventMessageReceive {
+  optional int64 agent_engagement_type_number = 28;         // unknown type
+  optional int64 bot_type_number = 37;                      // unknown type
+  optional int64 device_count = 16;                         // unknown type
+  optional int64 device_size_bucket_number = 10;            // unknown type
+  optional int64 disappearing_chat_initiator_number = 14;   // unknown type
+  optional int64 edit_type_number = 25;                     // unknown type
+  optional int64 ephemerality_duration = 13;                // unknown type
+  optional int64 ephemerality_initiator_number = 26;        // unknown type
+  optional int64 ephemerality_trigger_action_number = 27;   // unknown type
+  optional int64 has_username = 39;                         // unknown type
+  optional int64 message_addressing_mode_number = 34;       // unknown type
+  optional int64 message_is_international = 4;              // unknown type
+  optional int64 message_media_type_number = 2;             // unknown type
+  optional int64 message_queue_time = 15;                   // unknown type
+  optional int64 message_receive_t0 = 6;                    // unknown type
+  optional int64 message_receive_t1 = 7;                    // unknown type
+  optional int64 message_type_number = 1;                   // unknown type
+  optional int64 muted_group_message = 8;                   // unknown type
+  optional int64 offline_count = 30;                        // unknown type
+  optional int64 padding_bytes_size = 22;                   // unknown type
+  optional int64 participant_count = 17;                    // unknown type
+  optional int64 revoke_type_number = 20;                   // unknown type
+  optional int64 sender_default_disappearing_duration = 11; // unknown type
+  optional int64 server_addressing_mode_number = 35;        // unknown type
+  optional int64 sticker_is_ai = 29;                        // unknown type
+  optional int64 sticker_is_from_sticker_maker = 31;        // unknown type
+  optional int64 sticker_maker_source_type_number = 32;     // unknown type
+  optional int64 type_of_group_number = 21;                 // unknown type
+  optional int64 isAComment = 36;
+  optional int64 isAReply = 19;
+  optional int64 isForwardedForward = 18;
+  optional int64 isLid = 24;
+  optional int64 isViewOnce = 9;
+  optional int64 localAddressingMode = 33;
+  optional int64 messageIsOffline = 5;
+  optional int64 receiverDefaultDisappearingDuration = 12;
+
+}
+
+message WamEventE2eMessageRecv {
+  optional int64 agent_engagement_type_number = 15;   // unknown type
+  optional int64 bot_type_number = 19;                // unknown type
+  optional int64 e2e_ciphertext_type_number = 5;      // unknown type
+  optional int64 e2e_ciphertext_version = 6;          // unknown type
+  optional int64 e2e_destination_number = 4;          // unknown type
+  optional int64 e2e_failure_reason_number = 2;       // unknown type
+  optional int64 e2e_sender_type_number = 8;          // unknown type
+  optional int64 e2e_successful = 1;                  // unknown type
+  optional int64 edit_type_number = 13;               // unknown type
+  optional int64 is_hosted_chat = 20;                 // unknown type
+  optional int64 is_lid = 11;                         // unknown type
+  optional int64 local_addressing_mode_number = 16;   // unknown type
+  optional int64 message_addressing_mode_number = 17; // unknown type
+  optional int64 message_media_type_number = 7;       // unknown type
+  optional int64 offline = 9;                         // unknown type
+  optional int64 retry_count = 3;                     // unknown type
+  optional int64 revoke_type_number = 10;             // unknown type
+  optional int64 server_addressing_mode_number = 18;  // unknown type
+  optional int64 stanza_type_number = 14;             // unknown type
+  optional int64 type_of_group_number = 12;           // unknown type
+  optional int64 messageDistributionType = 21;
+
+}
+
+message WamEventWamLogin{
+  optional int64 androidKeystoreState= 10;
+  optional int64 connectionOrigin= 6;
+  optional int64 connectionT= 5;
+  optional int64 loginDnsResolver= 13;
+  optional int64 loginIpSource= 14;
+  optional int64 loginPort= 15;
+  optional string loginResolvedPop= 19;
+  optional int64 loginResult= 1;
+  optional int64 loginT= 3;
+  optional int64 logoutSessionId= 18;
+  optional int64 longConnect= 4;
+  optional int64 noiseProtocolVersion= 16;
+  optional int64 passive= 8;
+  optional int64 pendingAcksCount= 17;
+  optional int64 retryCount= 2;
+  optional int64 sequenceStep= 7;
+  optional int64 serverErrorCode= 9;
+}
+
+message WamEntryPointConversion {
+  optional int64 entry_point_converstion_type = 1;
+  optional string entry_point_conversion_source = 2;
+  optional string entry_point_conversion_app = 3;
+  optional int64 first_message_time_stamp = 4;
+  optional string entry_point_conversion_external_medium = 5;
+  optional string entry_point_conversion_external_source = 6;
+}
+
+message WamWefrClientExposure {
+  optional string exposure_key = 1;
+  optional int64 sent_with_daily = 3;
+}
